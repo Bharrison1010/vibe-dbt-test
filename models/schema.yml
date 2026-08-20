@@ -1,4 +1,4 @@
-﻿version: 2
+version: 2
 models:
   - name: stg_commercial_alliance
     description: "Commercial Alliance participation loans parsed from raw text lines"

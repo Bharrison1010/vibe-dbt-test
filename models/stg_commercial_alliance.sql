@@ -1,4 +1,4 @@
-﻿with raw as (
+with raw as (
     select _line, column_0 as txt
     from {{ source("sftp_raw", "commercial_alliance_raw") }}
 ),
