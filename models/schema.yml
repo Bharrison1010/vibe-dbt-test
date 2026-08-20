@@ -1,0 +1,17 @@
+﻿version: 2
+models:
+  - name: stg_commercial_alliance
+    description: "Commercial Alliance participation loans parsed from raw text lines"
+    columns:
+      - name: note_number
+        description: "Vendor note identifier"
+        tests:
+          - unique
+          - not_null
+      - name: current_balance
+        tests:
+          - not_null
+      - name: payment_status
+        tests:
+          - accepted_values:
+              values: ["CURRENT", "DELINQ 30", "DELINQ 60"]

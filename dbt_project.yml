@@ -1,0 +1,10 @@
+﻿name: "vibe_dbt_test"
+version: "1.0.0"
+config-version: 2
+profile: "vibe_dbt_test"
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+models:
+  vibe_dbt_test:
+    +materialized: table
